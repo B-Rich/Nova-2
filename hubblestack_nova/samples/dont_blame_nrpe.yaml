@@ -1,0 +1,9 @@
+grep:
+  blacklist:
+    dont_blame_nrpe:
+      data:
+        '*':
+          - '/etc/nagios/nrpe.conf':
+              tag: 'CVE-2014-2913'
+              pattern: 'dont_blame_nrpe=1'
+      description: 'NRPE - Nagios Remote Plugin Executor'
